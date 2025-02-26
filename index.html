@@ -4,6 +4,8 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=0.1">
         <title>Document</title>
+
+        <!--Ini link CSS-->
         <link rel="stylesheet" href="css\style.css">
     </head>
     <body>
@@ -27,22 +29,44 @@
             </header>
             <section class="main-content">
                 <aside class="banner">
-                    <p>Banner Autoslide</p>
+                    <div class="main-banner pic-1"></div>
+                    <div class="main-banner pic-2"></div>
                 </aside>
 
                 <aside class="cont-us">
                     <h3>Contact Us</h3>
-                    <p>Our Sales Department will contact you in 1x24 hours, or
-                        as soon as we collect your data
+                    <p>Our Sales Department will contact you in 1x24 hours, 
+                        or as soon as we collect your data
                     </p>
-                    <br>
                     <br>
                     <br>
                     <label>Your Name:</label>
                     <br>
-                    <input type="text">
+                    <input type="text" placeholder="Full name">
+                    <br>
+                    <label>Email Address:</label>
+                    <br>
+                    <input type="text" placeholder="example@email.com">
+                    <br>
+                    <label>What are you interested in?</label>
+                    <br>
+                    <select>
+                        <option disabled selected id="select-option">Select option</option>
+                        <option>Nature</option>
+                        <option>Culinary</option>
+                        <option>Tradition</option>
+                        <option>Countryside</option>
+                        <option>Skyscrapers</option>
+                    </select>
+                    <br>
+                    <div>
+                        <button>Send</button>
+                    </div>
+                    <br>
+                    <br>
                 </aside>
             </section>
         </main>
+        <script src="js/script.js"></script>
     </body>
 </html>
