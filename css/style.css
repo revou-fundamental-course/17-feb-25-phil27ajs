@@ -36,7 +36,7 @@ button > a {
     font-weight: normal;
 }
 button:hover {
-    background-color: #0056b3;
+    background-color: tomato;
 }
 .no-home {
     border-right: 0px;
@@ -78,19 +78,31 @@ header > h4 {
     margin-left: 60px;
     margin-right: 60px;
 }
-.main-content > .banner {
-    flex: 1 100px;
+.banner {
+    flex: 1 300px;
     border: 1px solid black;
-    text-align: start;
 }
-.main-content > .cont-us {
+.main-banner {
+    background-size: cover;
+    background-position: center;
+    width: 660px;
+    height: 400px;    
+}
+.pic-1 {
+    background-image: url(../assets/jalan.jpg);
+}
+.pic-2 {
+    background-image: url(../assets/jakarta.jpg);
+}
+.cont-us {
     flex: 1;
     padding-top: 30px;
     padding-left: 50px;
-    padding-right: 50px;
+    padding-right: 30px;
     background-color: aquamarine;
-    margin-left: 20px;
+    margin-left: 60px;
     text-align: justify;
+    height: 550px;
 }
 .cont-us > h3 {
     font-family: Arial, Helvetica, sans-serif;
@@ -100,8 +112,10 @@ header > h4 {
 .cont-us > p {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: normal;
-    color: gray;
+    color: grey;
     font-size: 13px;
+    padding-right: 100px;
+    line-height: 1.6;
 }
 .cont-us > label {
     font-family: Arial, Helvetica, sans-serif;
@@ -109,3 +123,54 @@ header > h4 {
     font-size: 14px;
     font-weight: bold;
 }
+input {
+    margin-top: 3px;
+    margin-bottom: 25px;
+    border: 3px solid #ccc;
+    border-radius: 10px;
+    padding-left: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    height: 40px;
+    width: 250px;
+}
+input::placeholder {
+    color: gray;
+}
+select {
+    margin-top: 3px;
+    margin-bottom: 25px;
+    border: 3px solid #ccc;
+    border-radius: 10px;
+    padding-left: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    height: 40px;
+    width: 250px;
+    color: gray;
+}
+select > option {
+    color: black;
+}
+#select-option {
+    color: gray;
+}
+.cont-us > button {
+    align-self: center;
+}
+.send {
+    align-self: center;
+}
+.cont-us > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div > button {
+    margin-top: 5px;
+    width: 200px;
+    height: 50px;
+    color: whitesmoke;
+    background-color: brown;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
