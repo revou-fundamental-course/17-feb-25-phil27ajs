@@ -1,4 +1,68 @@
 /* Ini CSS external */
+@media screen and (max-width: 480px) {
+    body {
+        background-color: blue;
+        width: 100% !important;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+    header {
+        width: 100%;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+    .main-header {
+        flex-direction: column !important;
+        align-items: center;
+        justify-content: center;
+        margin-left: 0px !important;
+        margin-right: 0px !important;
+    }
+    .main-header > nav {
+        height: 200px;
+    }
+    nav > button {
+        width: 100%;
+        flex-grow: 1;
+    }
+    .main-content {
+        display: flex;
+        flex-direction: column;
+        margin-left: 0%;
+        margin-right: 0%;
+        width: 100%;
+    }
+    .cont-us {
+        align-items: center;
+        justify-content: center;
+    }
+    .main-content > .banner {
+        width: 100%;
+        margin-left: 0%;
+        margin-right: 0%;
+        justify-content: center;
+        align-items: center;
+    }
+    article {
+        margin-left: 0%;
+        margin-right: 0%;
+        width: 100%;
+    }
+    .features > p {
+        font-size: 200px;
+    }
+    .packages-list {
+        flex-direction: column;
+        margin-left: 0%;
+        margin-right: 0%;
+        width: 100% !important;
+    }
+    .fill-package {
+        margin-left: 0%;
+        margin-right: 0%;
+        width: 100%;
+    }
+}
 
 html {
     scroll-behavior: smooth;
@@ -143,6 +207,8 @@ header > h4 {
 }
 .profile > img {
     margin-top: 10px;
+    width: 30px;
+    height: 30px;
 }
 .inside-prof {
     display: flex;
@@ -150,10 +216,6 @@ header > h4 {
     height: 70px;
     margin-left: 10px;
     line-height: 15px;
-}
-.profile > img {
-    width: 30px;
-    height: 30px;
 }
 .separator {
     width: 100px;
