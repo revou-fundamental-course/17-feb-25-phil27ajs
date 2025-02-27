@@ -1,5 +1,9 @@
 /* Ini CSS external */
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* Header & navigation*/
 .main-header {
     display: flex;
@@ -60,8 +64,9 @@ button:hover {
 hr {
     margin-left: -8px;
     margin-right: -8px;
-
 }
+
+/* Main Content */
 main > header {
     margin-top: 60px;
     text-align: center;
@@ -85,9 +90,10 @@ header > h4 {
     margin-left: 60px;
     margin-right: 60px;
 }
+
+/* Banner Autoslide */
 .banner {
     flex: 1 300px;
-    border: 1px solid black;
 }
 .main-banner {
     background-size: cover;
@@ -113,21 +119,41 @@ header > h4 {
     font-size: 20px;
 }
 .who {
-    margin-top: 15px;
+    margin-top: 6px;
     margin-bottom: 5px;
     color: darkslategrey;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 25px;
+    font-size: 21px;
 }
 .stat {
     margin-top: 5px;
     color: green;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: normal;
-    font-size: 18px;
+    font-size: 14px;
 }
 #tesy {
     height: 100px;
+    display: block;
+}
+.profile {
+    display: flex;
+    justify-content: flex-start;
+    text-align: start;
+}
+.profile > img {
+    margin-top: 10px;
+}
+.inside-prof {
+    display: flex;
+    flex-direction: column;
+    height: 70px;
+    margin-left: 10px;
+    line-height: 15px;
+}
+.profile > img {
+    width: 30px;
+    height: 30px;
 }
 .separator {
     width: 100px;
@@ -136,6 +162,40 @@ header > h4 {
     border: 3px solid darkslateblue;
     border-radius: 5px;
 }
+
+/* Information and features */
+.info-parag {
+    color: darkslategrey;
+    font-weight: bold;
+    width: 550px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 30px;
+    margin-bottom: 10px;
+}
+.features {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 75px;
+}
+.nums {
+    background-color: aqua;
+    text-align: center;
+    align-content: center;
+    height: 50px;
+    width: 50px;
+    color: darkslategrey;
+    border-radius: 50%;
+}
+.features > p {
+    margin-left: 20px;
+    width: 300px;
+    color: darkslategrey;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+/* Form Contact Us */
 .cont-us {
     flex: 1;
     padding-top: 30px;
@@ -144,7 +204,7 @@ header > h4 {
     background-color: aquamarine;
     margin-left: 60px;
     text-align: justify;
-    height: 550px;
+    height: 600px;
 }
 .cont-us > h3 {
     font-family: Arial, Helvetica, sans-serif;
@@ -159,7 +219,7 @@ header > h4 {
     padding-right: 100px;
     line-height: 1.6;
 }
-.cont-us > label {
+form > label {
     font-family: Arial, Helvetica, sans-serif;
     color: darkslategrey;
     font-size: 14px;
@@ -195,16 +255,9 @@ select > option {
 #select-option {
     color: gray;
 }
-.cont-us > button {
-    align-self: center;
-}
-.send {
-    align-self: center;
-}
-.cont-us > div {
+div {
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 div > button {
     margin-top: 5px;
@@ -215,4 +268,115 @@ div > button {
     border-radius: 5px;
     transition: background-color 0.3s ease;
 }
+.error-message {
+    margin-top: -15px;
+    display: block;
+    color: red;
+    font-size: 15px;
+}
 
+/* Our Packages Section */
+#our-packages {
+    margin-top: 30px;
+}
+#our-packages > header {
+    align-content: center;
+    text-align: center;
+    height: 150px;
+    background-color: whitesmoke;
+    color: darkslategrey;
+    font-size: 30px;
+}
+
+/* Package lists */
+#our-packages > header {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.packages-list {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.fill-package {
+    background-color: whitesmoke;
+    height: 200px;
+    width: 300px;
+    justify-content: flex-start;
+    border-radius: 10px;
+}
+.inside-fp {
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    width: 300px;
+    margin-left: 30px;
+}
+.inside-fp > h4 {
+    margin-top: 80px;
+    margin-bottom: 10px;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: darkred;
+}
+.inside-fp > p {
+    margin-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: wheat;
+    font-weight: bolder;
+}
+#bali {
+    background-image: url(../assets/bali.jpg);
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s ease;
+}
+#bali:hover {
+    transform: scale(1.1);
+}
+#japan {
+    background-image: url(../assets/japan.jpg);
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s ease;
+}
+#japan:hover {
+    transform: scale(1.1);
+}
+#singapore {
+    background-image: url(../assets/singapore.jpg);
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s ease;
+}
+#singapore:hover {
+    transform: scale(1.1);
+}
+#bandung {
+    background-image: url(../assets/bandung.jpg);
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s ease;
+}
+#bandung:hover {
+    transform: scale(1.1);
+}
+#surabaya {
+    background-image: url(../assets/surabaya.jpg);
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s ease;
+}
+#surabaya:hover {
+    transform: scale(1.1);
+}
+#thailand {
+    background-image: url(../assets/thailand.jpg);
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s ease;
+}
+#thailand:hover {
+    transform: scale(1.1);
+}
