@@ -9,10 +9,13 @@
         <link rel="stylesheet" href="css\style.css">
     </head>
     <body>
+        <!-- Header & Navigation -->
         <header class="main-header">
+            <!-- Logo Company -->
             <div>
                 <h2>ubiquitous</h2>
             </div>
+            <!-- Navigation buttons -->
             <nav>
                 <button class="no-home"><a href="#">Home</a></button>
                 <button class="no-pack"><a href="our-pack-section">Our Packages</a></button>
@@ -21,7 +24,7 @@
         </header>
 
         <hr>
-
+        <!-- Main Content-->
         <main>
             <header>
                 <h1>Your Trusted Travel Agent</h1>
@@ -30,7 +33,26 @@
             <section class="main-content">
                 <aside class="banner">
                     <div class="main-banner pic-1"></div>
+                    <div class="main-banner testy-1" id="tesy">
+                        <p class="prg-gen">"Great holiday with my travel agent..."</p>
+                        <h4 class="who">Jongki</h4>
+                        <h4 class="stat">Staff, 23</h4>
+                    </div>
                     <div class="main-banner pic-2"></div>
+                    <div class="main-banner testy-2" id="tesy">
+                        <p class="prg-gen">"Dream achieved, craving for more..."</p>
+                        <h4 class="who">Chad</h4>
+                        <h4 class="stat">Volunteer, 21</h4>
+                    </div>
+                    <div class="main-banner pic-3"></div>
+                    <div class="main-banner testy-3" id="tesy">
+                        <p class="prg-gen">"Love the travel agent's responsive..."</p>
+                        <h4 class="who">Bang Ocid</h4>
+                        <h4 class="stat">Food Seller, 29</h4>
+                    </div>
+                    <br>
+                    <hr class="separator">
+                    <p>Kenapa</p>
                 </aside>
 
                 <aside class="cont-us">
@@ -40,27 +62,27 @@
                     </p>
                     <br>
                     <br>
-                    <label>Your Name:</label>
+                    <label for="name">Your Name:</label>
                     <br>
-                    <input type="text" placeholder="Full name">
+                    <input type="text" placeholder="Full name" id="name">
                     <br>
-                    <label>Email Address:</label>
+                    <label for="email">Email Address:</label>
                     <br>
-                    <input type="text" placeholder="example@email.com">
+                    <input type="text" placeholder="example@email.com" id="email">
                     <br>
-                    <label>What are you interested in?</label>
+                    <label for="interest">What are you interested in?</label>
                     <br>
-                    <select>
-                        <option disabled selected id="select-option">Select option</option>
-                        <option>Nature</option>
-                        <option>Culinary</option>
-                        <option>Tradition</option>
-                        <option>Countryside</option>
-                        <option>Skyscrapers</option>
+                    <select id="interest">
+                        <option disabled selected id="select-option" value="">Select option</option>
+                        <option value="option">Nature</option>
+                        <option value="option">Culinary</option>
+                        <option value="option">Tradition</option>
+                        <option value="option">Countryside</option>
+                        <option value="option">Skyscrapers</option>
                     </select>
                     <br>
                     <div>
-                        <button>Send</button>
+                        <button onclick="return validateForm()">Send</button>
                     </div>
                     <br>
                     <br>
