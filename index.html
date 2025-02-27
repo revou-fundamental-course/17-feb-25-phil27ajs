@@ -9,21 +9,25 @@
         <link rel="stylesheet" href="css\style.css">
     </head>
     <body>
+
         <!-- Header & Navigation -->
-        <header class="main-header">
+        <header class="main-header" id="home-section">
+
             <!-- Logo Company -->
             <div>
                 <h2>ubiquitous</h2>
             </div>
+
             <!-- Navigation buttons -->
             <nav>
-                <button class="no-home"><a href="#">Home</a></button>
-                <button class="no-pack"><a href="our-pack-section">Our Packages</a></button>
+                <button class="no-home"><a href="#home-section">Home</a></button>
+                <button class="no-pack"><a href="#our-packages">Our Packages</a></button>
                 <button class="no-call"><a href="call-us-section">Call Us</a></button>
             </nav>
         </header>
 
         <hr>
+
         <!-- Main Content-->
         <main>
             <header>
@@ -31,30 +35,75 @@
                 <h4>Achieve your path with us</h4>
             </header>
             <section class="main-content">
+
+                <!-- Banner Autoslide -->
                 <aside class="banner">
                     <div class="main-banner pic-1"></div>
                     <div class="main-banner testy-1" id="tesy">
                         <p class="prg-gen">"Great holiday with my travel agent..."</p>
-                        <h4 class="who">Jongki</h4>
-                        <h4 class="stat">Staff, 23</h4>
+                        <div class="profile">
+                            <img src="assets/icon-profile.png">
+                            <div class="inside-prof">
+                                <h4 class="who">Tile</h4>
+                                <h4 class="stat">Staff, 23</h4>
+                            </div>
+                        </div>
                     </div>
                     <div class="main-banner pic-2"></div>
                     <div class="main-banner testy-2" id="tesy">
                         <p class="prg-gen">"Dream achieved, craving for more..."</p>
-                        <h4 class="who">Chad</h4>
-                        <h4 class="stat">Volunteer, 21</h4>
+                        <div class="profile">
+                            <img src="assets/icon-profile.png">
+                            <div class="inside-prof">
+                                <h4 class="who">Chad</h4>
+                                <h4 class="stat">Volunteer, 21</h4>
+                            </div>
+                        </div>
                     </div>
                     <div class="main-banner pic-3"></div>
                     <div class="main-banner testy-3" id="tesy">
                         <p class="prg-gen">"Love the travel agent's responsive..."</p>
-                        <h4 class="who">Bang Ocid</h4>
-                        <h4 class="stat">Food Seller, 29</h4>
+                        <div class="profile">
+                            <img src="assets/icon-profile.png">
+                            <div class="inside-prof">
+                                <h4 class="who">Bang Ocid</h4>
+                                <h4 class="stat">Food Seller, 29</h4>
+                            </div>
+                        </div>
                     </div>
                     <br>
                     <hr class="separator">
-                    <p>Kenapa</p>
-                </aside>
 
+                    <!-- Information & features -->
+                    <p class="info-parag">
+                        Use this space to provide users with more information
+                        about your offer. Consider it a follow-up to your headline
+                        and explain the benefits of your service or product
+                    </p>
+                    <div class="features">
+                        <h3 class="nums">1</h3>
+                        <p>
+                            Your first feature, written in the form
+                            of a benefit statement.
+                        </p>
+                    </div>
+                    <div class="features">
+                        <h3 class="nums">2</h3>
+                        <p>
+                            Your second feature, written in the form
+                            of a benefit statement.
+                        </p>
+                    </div>
+                    <div class="features">
+                        <h3 class="nums">3</h3>
+                        <p>
+                            Your third feature, written in the form
+                            of a benefit statement.
+                        </p>
+                    </div>
+                </aside>
+                
+                <!-- Form Contact Us -->
                 <aside class="cont-us">
                     <h3>Contact Us</h3>
                     <p>Our Sales Department will contact you in 1x24 hours, 
@@ -62,31 +111,108 @@
                     </p>
                     <br>
                     <br>
-                    <label for="name">Your Name:</label>
-                    <br>
-                    <input type="text" placeholder="Full name" id="name">
-                    <br>
-                    <label for="email">Email Address:</label>
-                    <br>
-                    <input type="text" placeholder="example@email.com" id="email">
-                    <br>
-                    <label for="interest">What are you interested in?</label>
-                    <br>
-                    <select id="interest">
-                        <option disabled selected id="select-option" value="">Select option</option>
-                        <option value="option">Nature</option>
-                        <option value="option">Culinary</option>
-                        <option value="option">Tradition</option>
-                        <option value="option">Countryside</option>
-                        <option value="option">Skyscrapers</option>
-                    </select>
-                    <br>
-                    <div>
-                        <button onclick="return validateForm()">Send</button>
-                    </div>
-                    <br>
-                    <br>
+                    <form>
+                        <label for="name">Your Name:</label>
+                        <br>
+                        <input type="text" placeholder="Full name" id="name">
+                        <span id="error-name" class="error-message"></span>
+                        <br>
+                        <label for="email">Email Address:</label>
+                        <br>
+                        <input type="text" placeholder="example@email.com" id="email">
+                        <span id="error-email" class="error-message"></span>
+                        <br>
+                        <label for="interest">What are you interested in?</label>
+                        <br>
+                        <select id="interest">
+                            <option disabled selected id="select-option" value="">Select option</option>
+                            <option value="option">Nature</option>
+                            <option value="option">Culinary</option>
+                            <option value="option">Tradition</option>
+                            <option value="option">Countryside</option>
+                            <option value="option">Skyscrapers</option>
+                        </select>
+                        <span id="error-interest" class="error-message"></span>
+                        <br>
+                        <div>
+                            <button id="send-button">Send</button>
+                        </div>
+                        <br>
+                        <br>
+                    </form>
                 </aside>
+            </section>
+
+            <!-- Our Packages Section -->
+            <section id="our-packages">
+                <header>
+                    <h2>Our Packages</h2>
+                </header>
+                <article class="packages-list">
+                    <div class="fill-package" id="bali">
+                        <div class="inside-fp">
+                            <h4>Bali</h4>
+                            <p>
+                                Travel and tour in Bali, visit interesting cultural
+                                heritage and culinary delights
+                            </p>
+                        </div>
+                    </div>
+                    <div class="fill-package" id="japan">
+                        <div class="inside-fp">
+                            <h4>Japan</h4>
+                            <p>
+                                Travel and tour in Japan, visit interesting cultural
+                                heritage and culinary delights
+                            </p>
+                        </div>
+                    </div>
+                    <div class="fill-package" id="singapore">
+                        <div class="inside-fp">
+                            <h4>Singapore</h4>
+                            <p>
+                                Travel and tour in Singapore, visit interesting cultural
+                                heritage and culinary delights
+                            </p>
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="packages-list">
+                    <div class="fill-package" id="bandung">
+                        <div class="inside-fp">
+                            <h4>Bandung</h4>
+                            <p>
+                                Travel and tour in Bandung, visit interesting cultural
+                                heritage and culinary delights
+                            </p>
+                        </div>
+                    </div>
+                    <div class="fill-package" id="surabaya">
+                        <div class="inside-fp">
+                            <h4>Surabaya</h4>
+                            <p>
+                                Travel and tour in Surabaya, visit interesting cultural
+                                heritage and culinary delights
+                            </p>
+                        </div>
+                    </div>
+                    <div class="fill-package" id="thailand">
+                        <div class="inside-fp">
+                            <h4>Thailand</h4>
+                            <p>
+                                Travel and tour in Thailand, visit interesting cultural
+                                heritage and culinary delights
+                            </p>
+                        </div>
+                    </div>
+                </article>
+            </section>
+            <br>
+            <br>
+            <br>
+            <section id="call-us-section">
+                
             </section>
         </main>
         <script src="js/script.js"></script>
