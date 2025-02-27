@@ -1,3 +1,6 @@
+/* Ini CSS external */
+
+/* Header & navigation*/
 .main-header {
     display: flex;
     flex-direction: row;
@@ -5,6 +8,8 @@
     margin-left: 100px;
     margin-right: 150px;
 }
+
+/* Logo Company */
 div > h2 {
     background-image: url("..//assets/bckgnd-2.jpg");
     background-position: center;
@@ -16,6 +21,8 @@ div > h2 {
     padding-right: 10px;
 
 }
+
+/* navigation buttons */
 nav {
     align-self: center;
     display: flex;
@@ -85,14 +92,49 @@ header > h4 {
 .main-banner {
     background-size: cover;
     background-position: center;
-    width: 660px;
-    height: 400px;    
+    width: 600px;
+    height: 400px; 
 }
 .pic-1 {
     background-image: url(../assets/jalan.jpg);
 }
 .pic-2 {
     background-image: url(../assets/jakarta.jpg);
+}
+.pic-3 {
+    background-image: url(../assets/grand-canyon.jpg);
+}
+.prg-gen {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    color: grey;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-size: 20px;
+}
+.who {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    color: darkslategrey;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+}
+.stat {
+    margin-top: 5px;
+    color: green;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+}
+#tesy {
+    height: 100px;
+}
+.separator {
+    width: 100px;
+    align-self: center;
+    margin: 8px 249px 8px 249px;
+    border: 3px solid darkslateblue;
+    border-radius: 5px;
 }
 .cont-us {
     flex: 1;
