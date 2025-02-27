@@ -1,11 +1,47 @@
+// Validation Form
 
-function validateForm() {
-    let nameInput = document.getElementById("name").innerHTML;
-    
+document.getElementById("send-button").addEventListener("click", function(event) {
+    event.preventDefault();
+
+    let valid = true;
+
+    let nameInput = document.getElementById("name").value.trim();
+    let emailInput = document.getElementById("email").value.trim();
+    let interestInput = document.getElementById("interest").value.trim();
+
     if (nameInput == "") {
-        alert("Name cannot be empty");
+        document.getElementById("error-name").innerText = "Name cannot be empty!";
+        valid = false;
     }
-}
+    else {
+        document.getElementById("error-name").innerText = "";
+    }
+    
+    let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (emailInput == "") {
+        document.getElementById("error-email").innerText = "E-mail cannot be empty!";
+        valid = false;
+    }
+    else if (!emailInput.match(emailPattern)) {
+        document.getElementById("error-email").innerText = "E-mail format is not valid!";
+        valid = false;
+    }
+    else {
+        document.getElementById("error-email").innerText = "";
+    }
+
+    if (interestInput == "") {
+        document.getElementById("error-interest").innerText = "Choose an interest!";
+        valid = false;
+    }
+    else {
+        document.getElementById("error-interest").innerText = "";
+    }
+    
+    if (valid) {
+        alert("Form is sent successfully!");
+    }
+})
 
 // Banner Autoslide
 
